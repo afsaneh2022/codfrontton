@@ -50,8 +50,8 @@ body{
   margin: 0;
   font-family: 'Mulish', sans-serif;
   height: 1200px;
-  /* background-color: var(--background_dark_main); */
-  background-color:var(-bakgrond)
+   background-color: var(--background_dark_main); 
+ 
 
 }
 
@@ -106,9 +106,10 @@ a{
   color: #fff;
 }
 .lightpage{
-  background-color: var(--background_light_main);
+  background-color: var(--background_light_main); 
   color: rgb(12, 12, 12); 
   margin:0px;
+  /* background-color:var(-bakgrond) */
 }
 
 
