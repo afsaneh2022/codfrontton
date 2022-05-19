@@ -281,36 +281,36 @@ display: block;
 
 /*  اضافه شده ها در صبح امروز   */
 
-.footer{
-  position: relative;
+.footer{ 
+  /* position: relative; */
   display: flex;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  justify-content: flex-start;
+  justify-content: space-between;
   margin: 0 -20px;
-  padding-bottom: 38px;
+  padding-bottom: 20px;
+  
+  
 
 }
-.footer-size{
-    width: 15%;
-    padding: 10px 10px 0px 0px ;
-    height: 300px;
+.footer-col1{
+    
+    height: 500px;
     font-size: 20px;
-    font-weight: 800px;
-    background-color: var(--icon_light_secondary);
-    color:var(--text_light_primary); 
+    font-weight: 400px;
     align-content: center;
+    padding: 10px 20px 0px 0px ;
+
 }
-.footer-link{
-  display:flex;
-  flex-direction: column;
-  padding: 0px;
+.footer-col1 h4{
   margin: 0px;
-  justify-content: flex-start;
 }
 
+.footer-col1 h6{
+  margin: 10px;
+}
 
-
+.footer-col1 a{
+  color: #728A96;
+}
 /*                            انتهای اضافه       */
 
 
