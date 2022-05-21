@@ -50,7 +50,7 @@ body{
   margin: 0;
   font-family: 'Mulish', sans-serif;
   height: 1200px;
-   background-color: var(--background_dark_main); 
+  background-color:var(--background_dark_gradient); 
  
 
 }
@@ -91,6 +91,9 @@ a{
   background-color: var(--button_light_secondary);
 }
 
+/* ----------------------------------------------- */
+
+/*  top of page ( Baner)     */
 
 .topline{
   display:block;
@@ -100,7 +103,7 @@ a{
   color: #fff;
   font-size: 12px;
 }
-
+/*   dark  and  light  pages  */
 .hero{
   background-color: var(--background_dark_main);
   color: #fff;
@@ -111,16 +114,16 @@ a{
   margin:0px;
   /* background-color:var(-bakgrond) */
 }
+/* ----------------------------------------------- */
 
-
-/* Nav */
+/************   Nav    *****************************/
 nav{
 
   padding: 16px 0;
   position: sticky;
   top: 0;
-  background: rgba(0, 0, 0, 0.7);
-  backdrop-filter: blur(4px);
+  background: var(--background_dark_gradient);
+  backdrop-filter: blur(8px);
 }
 
 nav .container{
@@ -137,6 +140,10 @@ nav .links a{
   padding: 0 16px;
   display: inline-block;
 }
+
+/*   kol pages properties     */
+
+
 .container{
   width: 100%;
   max-width: 80%;
@@ -147,6 +154,8 @@ nav .links a{
   display: flex;
   padding: 128px 0;
 }
+
+
 
 /* Description */
 .details .leftbox{
@@ -169,11 +178,6 @@ nav .links a{
   margin-bottom: 32px;
 }
 
-.details2 .leftbox h2{
-  font-size: 36px;
-  margin: 0;
-  font-weight: 400px;
-}
 .display-block{
 display: block;
 }
@@ -240,11 +244,6 @@ display: block;
   display: flex;
   padding: 64px 0;
 }
-
-.details2 .leftbox p{
-  background-color: var(--background_light_main);
-  color: rgb(12, 12, 12); 
-}
 /* Ton */
 .details2 .rightbox{
   width: 45%;
@@ -258,6 +257,16 @@ display: block;
   padding-right: 32px;
 }
 
+.details2 .leftbox h2{
+  font-size: 36px;
+  margin: 0;
+  font-weight: 400px;
+}
+.details2 .leftbox p{
+  background-color: var(--background_light_main);
+  color: rgb(12, 12, 12); 
+}
+
 .details2 .leftbox a{
   
   padding-right: 14px;
@@ -266,36 +275,170 @@ display: block;
 .Ton-TimeLine{
   display: block;
   font-size: 36px;
-  font-weight: 1000px;
+  font-weight: 800px;
   padding: 12px 0px 32px 0px;
   line-height: 32px;
 }
-.Blockchain-analysis{
-  display: block;
-  margin: auto;
-  font-size: 36px;
-  font-weight: 1000px;
-  justify-items: center;
+.Ton-TimeLine-text{
+  display: flex; 
+  justify-content: space-between;
 
+  font-size: 16px;
+  padding: 8px;
+  color:var(--text_light_secondary);
+  
+}
+.Ton-TimeLine-text span{
+  display: inline;
 }
 
-/*  اضافه شده ها در صبح امروز   */
+.ton-timeline-col{
+  width: 30%;
+}
+.ton-timeline-col .head{
+  font-size: 20;
+  font-weight: 800px;
+  color:var(--text_light_primary);
+  padding-bottom: 8px;
+}
+.Blockchain-analysis{
+  display: flex;
+  font-size: 36px;
+  font-weight: 800px;
+  justify-content:  center;
+  padding-bottom: 8px;
+  margin: 0px;
+
+}
+.btn-center{
+  display: flex;
+  justify-content: center;
+}
+.blockchain{
+width: 100%;
+max-width: 85%;
+margin: auto;
+}
+
+
+.Blockchain-analysis h3{
+    margin: 0px;
+} 
+.Blockchain-table{
+    border: 1px solid  #728A96;
+    border-radius: 24px;
+    height: 50%;
+    margin-top: 5%;
+    margin-bottom: 1%;
+    display: flex;
+    flex-direction: column;
+    color: #000;
+   
+
+}
+.blockchain-trow1{
+height: 20%;}
+.blockchain-trow{
+  height: 12%;
+}
+
+.blockchain-trow ,.blockchain-trow1{
+ 
+  padding: 24px;
+ margin: 0px;
+ display: flex;
+ justify-content: space-between;
+ font-size: 16px;
+ align-items: center;
+}
+
+.blockchain-col1{
+  width: 28%;
+  text-align:left;
+ 
+}
+.blockchain-col12{
+  width: 24%;
+  display:block;
+  padding-right: 2%;
+ text-align: center;
+}
+.blockchain-col12 img{
+  
+  width: 42px;
+  margin: 0px;
+  text-align: center;
+}
+.blockchain-col2{
+ padding-right: 2%;
+ text-align: center;
+ width: 24%;
+}
+.blockchain-p{
+  padding-bottom: 24px;
+  color: #728A96;
+}
+.blockchain-col1 , .blockchain-col12 ,.blockchain-col12{
+  font-size: 16px;
+}
+.blockchain-endpage{
+  color: #728A96;
+  font-size: 12px;
+  text-align: center;
+  line-height: 1.6px;
+  padding-bottom: 16px;
+}
+/* --------------------------------------------- */
+/*                          Block chain Developer */
+.Blockdevelop-table{
+  border: 1px solid  #000000b3; 
+    height: 40%;
+    margin-top: 0px;
+    margin-bottom: 1%;
+    display: flex;
+    color: #ffffff;
+    background-color: var(--background_dark_main);
+}
+.blockdevelop-head{
+  width: 100%;
+  height: 45px;
+  border-radius:24px 24px 0px 0px;
+  background-color: #000;
+  display: block;
+  margin-top: 32px;
+  margin-bottom: 0px;
+}
+.block-t-left{
+  width: 27%;
+  display: flex;
+  flex-direction: column;
+}
+.block-t-left a{
+  padding: 2px 0px 0px 24px;
+  margin: 0px;
+  border-right: 1px solid #728A96;
+  color: #ffffff;
+  font-weight: 400px;
+}
+.block-t-right{
+  width: 73%;
+  padding: 24px;
+}
 
 .footer{ 
   /* position: relative; */
   display: flex;
   justify-content: space-between;
   margin: 0 -20px;
-  padding-bottom: 20px;
+  padding-top: 0%;
+  
   
   
 
 }
 .footer-col1{
-    
-    height: 500px;
     font-size: 20px;
-    font-weight: 400px;
+    font-weight: 800px;
     align-content: center;
     padding: 10px 20px 0px 0px ;
 
@@ -304,17 +447,43 @@ display: block;
   margin: 0px;
 }
 
+.footer-col1 h5{
+  color: rgb(12, 12, 12); 
+  margin: 0px;
+
+}
 .footer-col1 h6{
   margin: 10px;
 }
 
 .footer-col1 a{
   color: #728A96;
+  margin: 10px;
+  line-height: 30px;
+  display: block;
 }
-/*                            انتهای اضافه       */
 
 
-@media screen and (max-width: 800px) {
+.endpage  {
+  height: 10%;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  color: #728A96;
+  align-items: flex-start;
+  
+  border-top: #000;
+  border-top: 1px solid #728A96;
+}
+.endpage .align{
+  align-items:center;
+}
+
+
+/* REsponsive */
+
+
+@media screen and (max-width: 768px) {
   .details{
     flex-direction: column;
     align-items: center;
@@ -323,4 +492,14 @@ display: block;
     flex-direction: column;
     align-items: center;
   }
+  
+.container{
+  width: 100%;
+  max-width: 100%;
+  margin: auto;
+}
+
+.links{
+  visibility: hidden;
+}
 }
