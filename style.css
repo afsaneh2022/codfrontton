@@ -87,7 +87,8 @@ a:hover{
 }
 
 .button-primary{
-  background-color: var(--button_light_primary);
+   background-color: var(--button_light_primary); 
+  
 }
 .button-primary:hover{
   background-color: var(--button_light_primary_hover);
@@ -330,6 +331,7 @@ margin: auto;
 
 .Blockchain-analysis h3{
     margin: 0px;
+    padding-top: 32px;
 } 
 .Blockchain-table{
     border: 1px solid  #728A96;
@@ -432,17 +434,68 @@ height: 20%;}
   padding: 24px;
 }
 
+
+.block-t-left a:hover{
+  background-color:var(--button_dark_secondary_hover) ;
+}
+ 
+.block-t-left a:focus{
+  
+  border-right: 2px solid blue;
+}
+/* ------------------------------------------------------ */
+
+.appservice-box{
+  display: flex;
+  justify-content: space-between;
+   height:  200px;
+  
+}
+.app-t-left ,.app-t-right{
+width: 40%;
+display: flex;
+justify-content:space-around;
+}
+
+/* --------------------------------------------------------------- */
+/*       Everyone  can participate */
+/* --------------------------------------------------------------- */
+
+.participate-box{
+  display: flex;
+  justify-content: space-between;
+  height:  500px;
+  
+ }
+
+.animation-pic{
+  border-radius: 24px;
+ 
+}
+.paticipate-col a.animate:hover{
+  border-radius: 24px;
+  transform: scale(1.1);
+  
+}
+
+.paticipate-col{
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* ------------------------------------------------------------------ */
+/*               fotter page        */
+/* ------------------------------------------------------------------ */
 .footer{ 
   /* position: relative; */
   display: flex;
   justify-content: space-between;
   margin: 0 -20px;
   padding-top: 0%;
-  
-  
-  
-
+    
 }
+
 .footer-col1{
     font-size: 20px;
     font-weight: 800px;
@@ -512,4 +565,9 @@ height: 20%;}
 .links{
   visibility: hidden;
 }
+
+.participate-box{
+  flex-direction: column;
+ }
+
 }
