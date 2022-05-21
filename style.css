@@ -57,7 +57,13 @@ body{
 
 a{
   text-decoration: none;
-}
+  }
+
+  
+a:hover{
+  color:var(--hovered_link);
+  
+  }
 
 /* Buttons */
 
@@ -270,6 +276,7 @@ display: block;
 .details2 .leftbox a{
   
   padding-right: 14px;
+  color: #08c;
 }
 /*   time line */
 .Ton-TimeLine{
@@ -463,6 +470,9 @@ height: 20%;}
   display: block;
 }
 
+.footer-col1 a:hover{
+  color:var(--hovered_link);
+}
 
 .endpage  {
   height: 10%;
