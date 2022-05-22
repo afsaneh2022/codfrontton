@@ -82,8 +82,8 @@ a:hover{
 }
 
 .button:hover{
-  background-color: var(--button_light_secondary_hover);
-  color: #000;
+  background-color: var(--button_dark_secondary_hover);
+  color: #fff;
 }
 
 .button-primary{
@@ -91,12 +91,20 @@ a:hover{
   
 }
 .button-primary:hover{
-  background-color: var(--button_light_primary_hover);
+   background-color: var(--button_light_primary_hover); 
+   color:#fff;
+  
 }
 
 .button-secondary{
-  background-color: var(--button_light_secondary);
+  background-color: var(--button_dark_secondary);
 }
+
+.button-secondary:hover{
+  background-color: var(--button_dark_secondary_hover);
+  color:#fff;
+}
+ 
 
 /* ----------------------------------------------- */
 
@@ -174,15 +182,20 @@ nav .links a{
   margin: 0;
   font-weight: 800;
 }one
+
 .details .leftbox h1 span{
   display: block;
 }
+
 .details .leftbox h1 span:last-child{
   color: #06a1ef;
 }
 .details .leftbox p{
   color: #ffffffb3;
   margin-bottom: 32px;
+ line-height:30px ;
+ font-size: 20px;
+ font-weight: 400px;
 }
 
 .display-block{
