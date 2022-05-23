@@ -42,6 +42,7 @@ body {
   --covers_light_green: #caefd9;
   --hovered_link: #08c;
 }
+
 *, *::after, *::before{
   box-sizing: border-box;
 }
@@ -52,7 +53,6 @@ body{
   height: 1200px;
   background-color:var(--background_dark_gradient); 
  
-
 }
 
 a{
@@ -70,7 +70,7 @@ a:hover{
 .button{
   padding: 16px 24px;
   border-radius: 45px;
-  color: #fff;
+  color: var(--background_light_main);
   font-weight: bold;
   display: inline-flex;
   align-items: center;
@@ -83,7 +83,7 @@ a:hover{
 
 .button:hover{
   background-color: var(--button_dark_secondary_hover);
-  color: #fff;
+  color: var(--background_light_main);
 }
 
 .button-primary{
@@ -92,7 +92,7 @@ a:hover{
 }
 .button-primary:hover{
    background-color: var(--button_light_primary_hover); 
-   color:#fff;
+   color:var(--background_light_main);
   
 }
 
@@ -102,7 +102,7 @@ a:hover{
 
 .button-secondary:hover{
   background-color: var(--button_dark_secondary_hover);
-  color:#fff;
+  color:var(--background_light_main);
 }
  
 
@@ -115,13 +115,13 @@ a:hover{
   text-align: center;
   padding: 8px;
   background: linear-gradient(90deg,#9a6dfb -7.22%,#5dc7fc 109.17%);
-  color: #fff;
+  color: var(--background_light_main);
   font-size: 12px;
 }
 /*   dark  and  light  pages  */
 .hero{
   background-color: var(--background_dark_main);
-  color: #fff;
+  color: var(--background_light_main);
 }
 .lightpage{
   background-color: var(--background_light_main); 
@@ -151,7 +151,7 @@ nav .links{
   align-items: center;
 }
 nav .links a{
-  color: #fff;
+  color: var(--background_light_main);
   padding: 0 16px;
   display: inline-block;
 }
@@ -247,14 +247,22 @@ display: block;
 .transactions-table{
   display: flex;
   justify-content: space-between;
-  background: var(--icon_light_secondary);
+  
   color: var(--text_light_primary);
   padding-top: 32px;
   padding-bottom: 0px;
 }
 .transactions-table h6{
   font-size: 20px;
-  padding-top: 2px;
+  margin-bottom: 0px;
+}
+.transact-col{
+ text-align:start;
+ width: 30%;
+ margin: 0px;
+ background: var(--icon_light_secondary);
+ padding-top: 0px;
+ padding-bottom: 0px;
 }
 
 /* صفحه دوم  */
@@ -292,36 +300,121 @@ display: block;
   padding-right: 14px;
   color: #08c;
 }
-/*   time line */
-.Ton-TimeLine{
-  display: block;
+/* ------------------------------------------------------ */
+/*   Time line */
+/* -------------------------------------------------------*/
+.Top-TimeLine{
   font-size: 36px;
   font-weight: 800px;
   padding: 12px 0px 32px 0px;
-  line-height: 32px;
 }
-.Ton-TimeLine-text{
-  display: flex; 
+/* -------------- */
+
+.timeline{
+  display: flex;  
+  position: relative;
+  margin-top: 1%;
   justify-content: space-between;
-
-  font-size: 16px;
-  padding: 8px;
-  color:var(--text_light_secondary);
-  
-}
-.Ton-TimeLine-text span{
-  display: inline;
 }
 
-.ton-timeline-col{
-  width: 30%;
+.timeline .timeline-col{
+  width: 33.3333333333%;
+  position: relative;
 }
-.ton-timeline-col .head{
-  font-size: 20;
-  font-weight: 800px;
-  color:var(--text_light_primary);
-  padding-bottom: 8px;
+.timeline::before{
+  display: block;
+  width: 66.6666666666%;
+  height: 2px;
+  background-color: var(--background_light_blue);
+  position: absolute;
+  content: "";
+  top:0px;
+  left:0px;
 }
+
+.dash-dot{
+  top:0;
+  left:66.6666666666%;
+  margin: 0px;
+  padding: 0px;
+}
+
+
+.timeline::after{
+  display: block;
+  width: 33.3333333333%;
+  height: 0px;
+  position: absolute;
+  content: "";
+  top:0px;
+  left:66.6666666666%;
+  background-image: url(/icons/line.svg);
+
+
+}
+
+.timeline .timeline-col::before{
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: red;
+  content: "";
+  transform: translatey(-50%);
+}
+
+/* 
+
+.timeline::before{
+  display:block;
+  width: 66.66666666%;
+  height: 2px;
+  background-color: var(--background_light_blue);
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+}
+
+.timeline::after{
+  display:block;
+  width: 33.33333333%;
+  height: 0;
+  border-top: 2px dashed var(--background_light_blue);
+  position: absolute;
+  top: 0;
+  left: 66.66666666%;
+  content: "";
+}
+
+.timeline .timeline-column{
+  width: 33.33333333%;
+  position: relative;
+}
+
+.timeline .timeline-column::before{
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--button_light_primary);
+  transform: translateY(-50%);
+  content: ""
+}
+
+.timeline .bigdot::before{
+  width: 16px;
+  height: 16px;
+  background-color: #fff;
+  border: 4px solid var(--button_light_primary);
+}  */
+/* ----------------------------------------------------------------- */
+
+
+
+/* ---------------------------------------------------------- */
+
+
 .Blockchain-analysis{
   display: flex;
   font-size: 36px;
@@ -418,7 +511,7 @@ height: 20%;}
     margin-top: 0px;
     margin-bottom: 1%;
     display: flex;
-    color: #ffffff;
+    color: var(--background_light_main);;
     background-color: var(--background_dark_main);
 }
 .blockdevelop-head{
@@ -439,7 +532,7 @@ height: 20%;}
   padding: 2px 0px 0px 24px;
   margin: 0px;
   border-right: 1px solid #728A96;
-  color: #ffffff;
+  color: var(--background_light_main);
   font-weight: 400px;
 }
 .block-t-right{
