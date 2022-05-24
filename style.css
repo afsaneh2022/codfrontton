@@ -118,7 +118,7 @@ nav .links a{
 
 .container{
   width: 100%;
-  max-width: 80%;
+  max-width: 85%;
   margin: auto;
 }
 
@@ -311,7 +311,7 @@ display: block;
   display:block;
   width: 33.33333333%;
   height: 0;
-  border-top: 2px dashed red;
+  border-top: 2px dashed var(--background_light_blue);
   position: absolute;
   top: 0;
   left: 66.66666666%;
@@ -353,6 +353,7 @@ display: block;
 .btn-center{
   display: flex;
   justify-content: center;
+  padding-bottom: 2%;
 }
 .blockchain{
 width: 100%;
@@ -447,13 +448,13 @@ height: 18%;}
 .color-dot3{ background-color: green;}
 .color-dot {
  content: "";
- width: 20px;
- height: 20px;
+ width: 16px;
+ height: 16px;
  border-radius: 50%;
 
  display: inline-block;
- border: 4px solid black;
-  transform: translate(50%,50%); */
+ border: 1px solid black;
+  transform: translate(50%,50%); 
 }
             
 
