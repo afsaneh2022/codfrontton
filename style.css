@@ -1,0 +1,667 @@
+
+ @import "/theme.css"; 
+
+ *, *::after, *::before{
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  font-family: 'Mulish', sans-serif;
+  height: 1300px;
+   background-color:var(--background_dark_gradient);
+ 
+}
+
+a{
+  text-decoration: none;
+  }
+
+  
+a:hover{
+  color:var(--hovered_link);
+  
+  }
+/* ------------------Buttons----------------------------- */
+
+
+.button{
+  padding: 16px 24px;
+  border-radius: 45px;
+  color: var(--background_light_main);
+  font-weight: bold;
+  display: inline-flex;
+  align-items: center;
+}
+
+.button .icon{
+  width: 16px;
+  margin-right: 8px;
+}
+
+.button:hover{
+  background-color: var(--button_dark_secondary_hover);
+  color: var(--background_light_main);
+}
+
+.button-primary{
+   background-color: var(--button_light_primary); 
+  
+}
+.button-primary:hover{
+   background-color: var(--button_light_primary_hover); 
+   color:var(--background_light_main);
+  
+}
+
+.button-secondary{
+  background-color: var(--button_dark_secondary);
+}
+
+.button-secondary:hover{
+  background-color: var(--button_dark_secondary_hover);
+  color:var(--background_light_main);
+}
+ 
+
+/* ------------------top of page ( Baner)----------------------------- */
+
+
+.topline{
+  display:block;
+  text-align: center;
+  padding: 8px;
+  background: linear-gradient(90deg,#9a6dfb -7.22%,#5dc7fc 109.17%);
+  color: var(--background_light_main);
+  font-size: 12px;
+}
+
+
+/* ------------------dark  and  light  pages----------------------------- */
+
+.hero{
+  background-color: var(--background_dark_main);
+  color: var(--background_light_main);
+}
+.lightpage{
+  background-color: var(--background_light_main); 
+  color: rgb(12, 12, 12); 
+  margin:0px;
+}
+/* --------------------------------------------------------------- */
+/*                 TOP  Navigation                            */
+/* --------------------------------------------------------------- */
+nav{
+
+  padding: 16px 0;
+  position: sticky;
+  top: 0;
+  background: var(--background_dark_gradient);
+  backdrop-filter: blur(8px);
+}
+
+nav .container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center
+}
+nav .links{
+  display: flex;
+  align-items: center;
+}
+nav .links a{
+  color: var(--background_light_main);
+  padding: 0 16px;
+  display: inline-block;
+}
+
+
+
+/* --------------------------------------------------------------- */
+/*                   pages properties                              */
+/* --------------------------------------------------------------- */
+
+.container{
+  width: 100%;
+  max-width: 1024;
+  margin: auto;
+}
+
+.details{
+  display: flex;
+  padding: 128px 0;
+}
+
+.details .leftbox{
+  width: 65%;
+  padding-right: 32px;
+ 
+}
+.details .leftbox h1{
+  font-size: 56px;
+  margin: 0;
+  font-weight: 800;
+}one
+
+.details .leftbox h1 span{
+  display: block;
+}
+
+.details .leftbox h1 span:last-child{
+  color: #06a1ef;
+}
+.details .leftbox p{
+  color: #ffffffb3;
+  margin-bottom: 32px;
+ line-height:30px ;
+ font-size: 18px;
+ font-weight: 400px;
+}
+
+.display-block{
+display: block;
+}
+/* Ton */
+.details .rightbox{
+  width: 35%;
+  display: flex;
+  text-align:left; 
+  
+  background-color:linear-gradient(90deg,#9a6dfb -7.22%,#5dc7fc 109.17%);;
+
+}
+
+/* --------------------------------------------------------------- */
+/*                     Mass adoption                               */
+/* --------------------------------------------------------------- */
+
+.direction-page{
+  display: flex;
+  flex-direction: column;
+
+}
+
+.mass-adop{
+  display:block;
+  text-align: center;
+  padding: 8px;}
+ 
+.mass-adop  h2 span{
+  padding: 4px;
+}
+
+ .mass-adop p{
+  color:var(--text_light_secondary);
+  padding-top: 0px;
+  margin: 0px;
+}
+
+  .mass-adop h2{
+  font-size: 40px;
+  line-height: 40px;
+  font-weight: 900px;
+  display: block;
+  text-align: center;
+}
+  .mass-adop h2 span{
+  display: block;
+  line-height: 40px;
+  text-align: center;
+}
+/* --------------------transactions-table------------------------------ */
+.transactions-table{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+  padding-top: 50px;
+  padding-bottom: 60px;
+}
+.transactions-table h6{
+  font-size: 20px;
+  margin-bottom: 0px;
+}
+.transact-col{
+  overflow: hidden;
+  position: relative;
+  padding: 24px;
+  width: 30%;
+  background-color: #f7f9fb;
+  border-radius: 24px;
+}
+.transactions-table .icon{
+  height: 80px;
+  transform: translate(50%,-50%);
+  top: 50%;
+  right: 8px;
+  position: absolute;
+  color:var(--icon_light_secondary)
+}
+
+
+/* ---------------------------------------------------------- */
+
+
+
+.details2{
+  display: flex;
+  padding: 64px 0;
+}
+/* Ton */
+.details2 .rightbox{
+  width: 45%;
+  display: flex;
+  text-align:left; 
+  padding: 2px; 
+}
+
+.details2 .leftbox{
+  width: 55%;
+  padding-right: 32px;
+}
+
+.details2 .leftbox h2{
+  font-size: 36px;
+  margin: 0;
+  font-weight: 400px;
+}
+.details2 .leftbox p{
+  background-color: var(--background_light_main);
+  color: rgb(12, 12, 12); 
+}
+
+.details2 .leftbox a{
+  
+  padding-right: 14px;
+  color: #08c;
+}
+/* ------------------------------------------------------ */
+/*                         Time line                      */
+/* -------------------------------------------------------*/
+.Top-TimeLine{
+  font-size: 36px;
+  font-weight: 800px;
+  padding: 12px 0px 32px 0px;
+}
+
+
+.timeline{
+  display: flex;  
+  position: relative;
+  margin-top: 1%;
+  justify-content: space-between;
+}
+
+.timeline .timeline-col{
+  width: 33.3333333333%;
+  position: relative;
+}
+.timeline::before{
+  display: block;
+  width: 66.6666666666%;
+  height: 2px;
+  background-color: var(--background_light_blue);
+  position: absolute;
+  content: "";
+  top:0px;
+  left:0px;
+}
+
+.dash-dot{
+  top:0;
+  left:66.6666666666%;
+  margin: 0px;
+  padding: 0px;
+}
+
+
+.timeline::after{
+  display:block;
+  width: 33.33333333%;
+  height: 0;
+  border-top: 2px dashed var(--background_light_blue);
+  position: absolute;
+  top: 0;
+  left: 66.66666666%;
+  content: "";
+}
+
+
+.timeline .timeline-col::before{
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--button_light_primary);
+  content: "";
+  transform: translatey(-50%);
+}
+
+.timeline .bigdot::before{
+  width: 16px;
+  height: 16px;
+  background-color: #fff;
+  border: 4px solid var(--button_light_primary);
+}
+
+
+
+/* --------------------------------------------------------------- */
+/*                     Blockchain-analysis                         */
+/* --------------------------------------------------------------- */
+
+.Blockchain-analysis{
+  display: flex;
+  font-size: 36px;
+  font-weight: 800px;
+  justify-content:  center;
+  padding-bottom: 8px;
+  margin: 0px;
+
+}
+.btn-center{
+  display: flex;
+  justify-content: center;
+  padding-bottom: 2%;
+}
+
+.blockchain{
+width: 100%;
+max-width: 85%;
+margin: auto;
+}
+
+
+.Blockchain-analysis h3{
+    margin: 0px;
+    padding-top: 32px;
+}
+.Blockchain-table{
+    border: 1px solid  var(--text_light_secondary);
+    border-radius: 24px;
+    height: 50%;
+    margin-top: 5%;
+    margin-bottom: 1%;
+    display: flex;
+    flex-direction: column;
+    color: #000;
+    padding: 16px;
+   
+
+}
+.blockchain-trow1{
+height: 18%;}
+.blockchain-trow{
+  height: 12%;
+}
+
+.blockchain-trow ,.blockchain-trow1{
+ 
+  padding: 24px;
+ margin: 0px;
+ display: flex;
+ justify-content: space-between;
+ font-size: 16px;
+ align-items: center;
+}
+
+.blockchain-col1{
+  width: 28%;
+  text-align:left;
+ 
+}
+.blockchain-col12{
+  width: 24%;
+  display:block;
+  padding-right: 2%;
+ text-align: center;
+}
+.blockchain-col12 img{
+  
+  width: 42px;
+  margin: 0px;
+  text-align: center;
+}
+.blockchain-col2{
+ padding-right: 2%;
+ text-align: center;
+ width: 24%;
+}
+.blockchain-p{
+  padding-bottom: 24px;
+  color:var(--text_light_secondary);
+  text-align: center;
+}
+.blockchain-col1 , .blockchain-col12 ,.blockchain-col12{
+  font-size: 16px;
+}
+.blockchain-endpage{
+  color: var(--text_light_secondary);
+  font-size: 12px;
+  text-align: center;
+  line-height: 1.6px;
+  padding-bottom: 16px;
+}
+/* --------------------------------------------------------------- */
+/*                      Blockdeveloper                             */
+/* --------------------------------------------------------------- */
+.dots{
+  width: 15%;
+  height: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  padding-left: 20px;
+}
+.color-dot1{ background-color: red;}
+.color-dot2{ background-color: yellow;}
+.color-dot3{ background-color: green;}
+.color-dot {
+ content: "";
+ width: 16px;
+ height: 16px;
+ border-radius: 50%;
+
+ display: inline-block;
+ border: 1px solid black;
+  transform: translate(50%,50%); 
+}
+            
+
+.Blockdevelop-table{
+  border: 1px solid  #000000b3; 
+    height: 40%;
+    margin-top: 0px;
+    margin-bottom: 1%;
+    display: flex;
+    color: var(--background_light_main);;
+    background-color: var(--background_dark_main);
+    border-radius: 0px 0px 24px 24px;
+    padding-bottom: 32px;
+   
+}
+.blockdevelop-head{
+  width: 100%;
+  height: 45px;
+  border-radius:24px 24px 0px 0px;
+  background-color: #000;
+  display: block;
+  margin-top: 32px;
+  margin-bottom: 0px;
+}
+.block-t-left{
+  width: 27%;
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+}
+.block-t-left a{
+  padding: 2px 0px 0px 24px;
+  margin: 0px;
+  border-right: 1px solid var(--text_light_secondary);
+  color: var(--background_light_main);
+  font-weight: 400px;
+}
+.block-t-right{
+  width: 73%;
+  padding: 24px;
+}
+
+
+.block-t-left a:hover{
+  background-color:var(--button_dark_secondary_hover) ;
+}
+ 
+.block-t-left a:focus{
+  
+  border-right: 2px solid blue;
+}
+
+/* --------------------------------------------------------------- */
+/*                      App & Services                             */
+/* --------------------------------------------------------------- */
+
+.appservice-box{
+   display: flex;
+  justify-content:space-between;
+  }
+
+.app-t-left ,.app-t-right{
+width: 35%;
+display: flex;
+justify-content:space-around;
+}
+
+/* --------------------------------------------------------------- */
+/*                       Everyone  can participate                 */
+/* --------------------------------------------------------------- */
+
+.participate-box{
+  display: flex;
+  justify-content: space-between;
+  height:  25%;
+  
+ }
+
+.animation-pic{
+  border-radius: 24px;
+ 
+}
+.paticipate-col a.animate:hover{
+  border-radius: 24px;
+  transform: scale(1.1);
+  
+}
+
+.paticipate-col{
+  display: flex;
+  flex-direction: column;
+}
+
+
+/* ------------------------------------------------------------------ */
+/*                           fotter page                              */
+/* ------------------------------------------------------------------ */
+.footer{ 
+  
+  display: flex;
+  justify-content: space-between;
+  margin: 0 ;
+  padding-top: 1%;
+  width: 100%;  
+}
+
+.footer-col1{
+    width: 16.6666666666%;
+    font-size: 20px;
+    font-weight: 800px;
+    align-content: center;
+    padding: 1% 4% 0px 0px ;
+
+}
+.footer-col1 h4{
+  margin: 0px;
+}
+
+.footer-col1 a{
+  color: var(--text_light_secondary);
+  margin: 0px;
+  line-height: 25px;
+  display: block;
+}
+
+.footer-col1 a:hover{
+  color:var(--hovered_link);
+}
+
+/* ------------------------------------------------------------------ */
+/*                           End-homepage                            */
+/* ------------------------------------------------------------------ */
+.end-homepage  {
+  height: 8%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  color:var(--text_light_secondary);
+  align-items: center; 
+  border-top: 1px solid var(--text_light_secondary);
+ }
+ .end-homepage .align{ 
+    align-items:flex-start; 
+    display: flex;
+   }
+
+   .end-homepage .align span{ 
+    padding-left: 10px;
+   
+  }
+
+  .end-homepage .align a:hover{ 
+    color:blue;
+   
+  }
+
+
+/* ------------------------------------------------------------------ */
+/*                          REsponsive                                */
+/* ------------------------------------------------------------------ */
+
+
+
+@media screen and (max-width: 768px) {
+  .details{
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+  }
+  .details2{
+    flex-direction: column;
+    align-items: center;
+  }
+  
+.container{
+  width: 100%;
+  max-width: 100%;
+  margin: auto;
+}
+
+.links{
+  visibility: hidden;
+}
+
+.participate-box{
+  flex-direction: column;
+ }
+
+ .end-homepage{
+  flex-direction:column-reverse;
+  justify-content: flex-end;
+  
+     }
+  .foundation-start{
+      font-size: 12px;
+      padding: 10px;
+     }
+
+}
