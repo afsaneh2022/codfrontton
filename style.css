@@ -1,6 +1,7 @@
 
  @import "/theme.css"; 
-*, *::after, *::before{
+
+ *, *::after, *::before{
   box-sizing: border-box;
 }
 
@@ -21,8 +22,8 @@ a:hover{
   color:var(--hovered_link);
   
   }
+/* ------------------Buttons----------------------------- */
 
-/* Buttons */
 
 .button{
   padding: 16px 24px;
@@ -63,9 +64,8 @@ a:hover{
 }
  
 
-/* ----------------------------------------------- */
+/* ------------------top of page ( Baner)----------------------------- */
 
-/*  top of page ( Baner)     */
 
 .topline{
   display:block;
@@ -75,7 +75,10 @@ a:hover{
   color: var(--background_light_main);
   font-size: 12px;
 }
-/*   dark  and  light  pages  */
+
+
+/* ------------------dark  and  light  pages----------------------------- */
+
 .hero{
   background-color: var(--background_dark_main);
   color: var(--background_light_main);
@@ -84,11 +87,10 @@ a:hover{
   background-color: var(--background_light_main); 
   color: rgb(12, 12, 12); 
   margin:0px;
-  /* background-color:var(-bakgrond) */
 }
-/* ----------------------------------------------- */
-
-/************   Nav    *****************************/
+/* --------------------------------------------------------------- */
+/*                 TOP  Navigation                            */
+/* --------------------------------------------------------------- */
 nav{
 
   padding: 16px 0;
@@ -113,12 +115,15 @@ nav .links a{
   display: inline-block;
 }
 
-/*   kol pages properties     */
 
+
+/* --------------------------------------------------------------- */
+/*                   pages properties                              */
+/* --------------------------------------------------------------- */
 
 .container{
   width: 100%;
-  max-width: 85%;
+  max-width: 1024;
   margin: auto;
 }
 
@@ -127,12 +132,10 @@ nav .links a{
   padding: 128px 0;
 }
 
-
-
-/* Description */
 .details .leftbox{
   width: 65%;
   padding-right: 32px;
+ 
 }
 .details .leftbox h1{
   font-size: 56px;
@@ -163,9 +166,14 @@ display: block;
   width: 35%;
   display: flex;
   text-align:left; 
-  padding: 2px; 
+  
+  background-color:linear-gradient(90deg,#9a6dfb -7.22%,#5dc7fc 109.17%);;
+
 }
-/* صفحه  اول بعد از پورت ويو  */
+
+/* --------------------------------------------------------------- */
+/*                     Mass adoption                               */
+/* --------------------------------------------------------------- */
 
 .direction-page{
   display: flex;
@@ -200,7 +208,7 @@ display: block;
   line-height: 40px;
   text-align: center;
 }
-/* -------------------------------------------------- */
+/* --------------------transactions-table------------------------------ */
 .transactions-table{
   display: flex;
   align-items: center;
@@ -232,7 +240,7 @@ display: block;
 
 
 /* ---------------------------------------------------------- */
-/* صفحه دوم  */
+
 
 
 .details2{
@@ -268,7 +276,7 @@ display: block;
   color: #08c;
 }
 /* ------------------------------------------------------ */
-/*   Time line */
+/*                         Time line                      */
 /* -------------------------------------------------------*/
 .Top-TimeLine{
   font-size: 36px;
@@ -338,8 +346,9 @@ display: block;
 
 
 
-/* ----------------------------------------------------- */
-
+/* --------------------------------------------------------------- */
+/*                     Blockchain-analysis                         */
+/* --------------------------------------------------------------- */
 
 .Blockchain-analysis{
   display: flex;
@@ -355,6 +364,7 @@ display: block;
   justify-content: center;
   padding-bottom: 2%;
 }
+
 .blockchain{
 width: 100%;
 max-width: 85%;
@@ -367,7 +377,7 @@ margin: auto;
     padding-top: 32px;
 }
 .Blockchain-table{
-    border: 1px solid  #728A96;
+    border: 1px solid  var(--text_light_secondary);
     border-radius: 24px;
     height: 50%;
     margin-top: 5%;
@@ -419,22 +429,22 @@ height: 18%;}
 }
 .blockchain-p{
   padding-bottom: 24px;
-  color: #728A96;
+  color:var(--text_light_secondary);
   text-align: center;
 }
 .blockchain-col1 , .blockchain-col12 ,.blockchain-col12{
   font-size: 16px;
 }
 .blockchain-endpage{
-  color: #728A96;
+  color: var(--text_light_secondary);
   font-size: 12px;
   text-align: center;
   line-height: 1.6px;
   padding-bottom: 16px;
 }
-/* --------------------------------------------- */
-/*   Block chain Developer */
-
+/* --------------------------------------------------------------- */
+/*                      Blockdeveloper                             */
+/* --------------------------------------------------------------- */
 .dots{
   width: 15%;
   height: 25px;
@@ -488,7 +498,7 @@ height: 18%;}
 .block-t-left a{
   padding: 2px 0px 0px 24px;
   margin: 0px;
-  border-right: 1px solid #728A96;
+  border-right: 1px solid var(--text_light_secondary);
   color: var(--background_light_main);
   font-weight: 400px;
 }
@@ -506,28 +516,30 @@ height: 18%;}
   
   border-right: 2px solid blue;
 }
-/* ------------------------------------------------------ */
+
+/* --------------------------------------------------------------- */
+/*                      App & Services                             */
+/* --------------------------------------------------------------- */
 
 .appservice-box{
-  display: flex;
-  justify-content: space-between;
-   height:  200px;
-  
-}
+   display: flex;
+  justify-content:space-between;
+  }
+
 .app-t-left ,.app-t-right{
-width: 40%;
+width: 35%;
 display: flex;
 justify-content:space-around;
 }
 
 /* --------------------------------------------------------------- */
-/*       Everyone  can participate */
+/*                       Everyone  can participate                 */
 /* --------------------------------------------------------------- */
 
 .participate-box{
   display: flex;
   justify-content: space-between;
-  height:  500px;
+  height:  25%;
   
  }
 
@@ -548,41 +560,33 @@ justify-content:space-around;
 
 
 /* ------------------------------------------------------------------ */
-/*               fotter page        */
+/*                           fotter page                              */
 /* ------------------------------------------------------------------ */
 .footer{ 
-  /* position: relative; */
+  
   display: flex;
   justify-content: space-between;
-  margin: 0 -20px;
-  padding-top: 0%;
-    
+  margin: 0 ;
+  padding-top: 1%;
+  width: 100%;  
 }
 
 .footer-col1{
+    width: 16.6666666666%;
     font-size: 20px;
     font-weight: 800px;
     align-content: center;
-    padding: 10px 20px 0px 0px ;
+    padding: 1% 4% 0px 0px ;
 
 }
 .footer-col1 h4{
   margin: 0px;
 }
 
-.footer-col1 h5{
-  color: rgb(12, 12, 12); 
-  margin: 0px;
-
-}
-.footer-col1 h6{
-  margin: 10px;
-}
-
 .footer-col1 a{
-  color: #728A96;
-  margin: 10px;
-  line-height: 30px;
+  color: var(--text_light_secondary);
+  margin: 0px;
+  line-height: 25px;
   display: block;
 }
 
@@ -590,29 +594,46 @@ justify-content:space-around;
   color:var(--hovered_link);
 }
 
-.endpage  {
-  height: 10%;
+/* ------------------------------------------------------------------ */
+/*                           End-homepage                            */
+/* ------------------------------------------------------------------ */
+.end-homepage  {
+  height: 8%;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   padding-top: 20px;
-  color: #728A96;
-  align-items: flex-start;
-  
-  border-top: #000;
-  border-top: 1px solid #728A96;
-}
-.endpage .align{
-  align-items:center;
-}
+  color:var(--text_light_secondary);
+  align-items: center; 
+  border-top: 1px solid var(--text_light_secondary);
+ }
+ .end-homepage .align{ 
+    align-items:flex-start; 
+    display: flex;
+   }
+
+   .end-homepage .align span{ 
+    padding-left: 10px;
+   
+  }
+
+  .end-homepage .align a:hover{ 
+    color:blue;
+   
+  }
 
 
-/* REsponsive */
+/* ------------------------------------------------------------------ */
+/*                          REsponsive                                */
+/* ------------------------------------------------------------------ */
+
 
 
 @media screen and (max-width: 768px) {
   .details{
     flex-direction: column;
     align-items: center;
+    align-content: center;
   }
   .details2{
     flex-direction: column;
@@ -632,5 +653,15 @@ justify-content:space-around;
 .participate-box{
   flex-direction: column;
  }
+
+ .end-homepage{
+  flex-direction:column-reverse;
+  justify-content: flex-end;
+  
+     }
+  .foundation-start{
+      font-size: 12px;
+      padding: 10px;
+     }
 
 }
