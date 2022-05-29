@@ -524,34 +524,83 @@ height: 18%;}
 /* --------------------------------------------------------------- */
 
 .appservice-box{
-   display: flex;
+  display: flex;
   justify-content:space-between;
   height: 100%;
   }
 
 .app-t-left ,.app-t-right{
-width: 35%;
+width: 40%;
 display: flex;
 justify-content:space-between;
 flex-wrap: wrap;
- position: relative; 
-align-items: center;
-}
-.app-icons1{
-  position: absolute;  
-/* background-image: url(/Appimage/app_5.c623915b.png); */
+align-items: flex-start;
 }
 .app-icons{
-     /* position: absolute;   */
-  /* background-image: url(/Appimage/app_5.c623915b.png); */
-   width: 15%;
-  height: 18% ;
+  position: absolute;  
+  width: 27/92%;
+  height: 27/92% ;
+   }
+
+.app-icon::before,.app-icon::after{
+    background-size: cover; 
+    display: block;
+    content: "";
+    border-radius: 24px;
   }
-.app-icon1{position: absolute; transform: translatey(20px); background-color:blue; }
-.app-icon2{ background-color:yellow;}
-.app-icon3{ background-color:green;}
-.app-icon4{ position: absolute; transform: translatey(50px);background-color:gray;}
-.app-icon5{ background-color:red;}
+.app-icon::after{
+  position: relative; 
+  width: 100px;
+  height: 100px;
+  z-index:4;
+  overflow: hidden;
+   }
+ .app-icon::before{
+  position: absolute;
+  width: 150px;
+  height:101px;
+  background-image: url("./Appimage/shadow.svg") ;
+  z-index: 1;
+ }
+ /*   App Icon 1  */
+ .app-icon1::after{  background-image: url("./Appimage/app_1.1c26040b.png");}
+ .app-icon1::before{  top:1px; left:6px;}
+/*     App Icon2 */
+ .app-icon2::after{  background-image: url("./Appimage/app_2.8d72c408.png"); top:20px; left:120px;}
+ .app-icon2::before{  top:21px; left:130px;}
+ 
+/*     App Icon3 */
+ .app-icon3::after{  background-image: url("./Appimage/app_3.8c8e6665.png"); top:121px; left:6px;}
+ .app-icon3::before{  top:121px; left:6px;}
+
+/*     App Icon4 */
+.app-icon4::after{  background-image: url("./Appimage/app_4.f4661c33.png"); top:121px; left:120px;}
+.app-icon4::before{  top:21px; left:130px;}
+
+
+/*     App Icon5 */
+.app-icon5::after{  background-image: url("./Appimage/app_5.c623915b.png"); top:20px; left: 6px;}
+.app-icon5::before{  top:21px; left:130px;}
+
+
+/*     App Icon6 */
+.app-icon6::after{  background-image: url("./Appimage/app_6.0fae114f.png"); top:120px; left:200px;}
+.app-icon6::before{  top:21px; left:130px;}
+
+
+/*     App Icon7 */
+.app-icon7::after{  background-image: url("./Appimage/app_7.c83f2653.png"); top:20px; left:120px;}
+.app-icon7::before{  top:21px; left:130px;}
+
+
+/*     App Icon8 */
+.app-icon8::after{  background-image: url("./Appimage/app_8.8b779dd0.png"); top:120px; left:120px;}
+.app-icon8::before{  top:21px; left:130px;}
+
+
+/*     App Icon9 */
+.app-icon9::after{  background-image: url("./Appimage/app_9.6cc8bad3.png"); top:20px; left:120px;}
+.app-icon9::before{  top:21px; left:130px;}
 
 /* -------------------------------------------------------------- */
 /*                       Everyone  can participate                 */
