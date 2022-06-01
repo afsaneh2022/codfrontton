@@ -491,33 +491,62 @@ height: 18%;}
   margin-top: 32px;
   margin-bottom: 0px;
 }
-.block-t-left{
+.develop-tabs{
   width: 27%;
   display: flex;
   flex-direction: column;
   align-content: flex-start;
 }
-.block-t-left a{
-  padding: 2px 0px 0px 24px;
-  margin: 0px;
-  border-right: 1px solid var(--text_light_secondary);
+.develop-tabs .tab{
+  padding: 24px 16px;
+  margin:0px;
+  margin-bottom: 5px;
   color: var(--background_light_main);
   font-weight: 400px;
+  
 }
-.block-t-right{
-  width: 73%;
-  padding: 24px;
-}
-
-
-.block-t-left a:hover{
+.develop-tabs .tab:hover{
   background-color:var(--button_dark_secondary_hover) ;
 }
- 
-.block-t-left a:focus{
-  
-  border-right: 2px solid blue;
+.develop-content{
+  width: 73%;
+  padding:12px 24px;
+  line-height: 24px;
+  font-size: 16px;
+  font-weight: 200px;
+  color: var(--background_light_main);
+  border-left: 1px solid var(--text_light_secondary);
 }
+
+
+.develop-tabs .tab.selected{
+  border-right: 2px solid blue;
+  background-color:var(--button_dark_secondary_hover) ;
+  
+}
+
+.develop-content .tab-content{
+  display: none;
+}
+.develop-content .tab-content.show{
+  display: block;
+  height: 60%;
+}
+.develop-content a{
+  color:var( --button_dark_text);
+  }
+.pre-next{
+  width: 98%;
+  height: 40%;
+  display: flex;
+  justify-content: space-between;
+  padding-top:30%;
+ 
+}
+.pre-next a{ 
+  color:#ffffff;
+}
+
 
 /* --------------------------------------------------------------- */
 /*                      App & Services                             */
